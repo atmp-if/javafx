@@ -29,5 +29,6 @@
           <TableColumn fx:id="resultCol" prefWidth="117.0" text="Результат" />
         </columns>
       </TableView>
+      <Button mnemonicParsing="false" onAction="#next" text="Наступний" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
 </GridPane>

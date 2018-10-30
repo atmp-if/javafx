@@ -33,4 +33,12 @@ public class FibonacciController {
 		thread.start();
 	}
 
+	@FXML
+	public void next() {
+		long n = Long.parseLong(input.getText());
+		n++;
+		input.setText(Long.toString(n));
+		calculate();
+	}
+
 }
