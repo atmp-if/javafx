@@ -14,14 +14,13 @@ public class FibonacciController {
 	@FXML
 	public void calculate() {
 		long n = Long.parseLong(input.getText());
-		long a = 0, b = 0, c = 1;
-		for (int i = 0; i < n; i++) {
-			a = b;
-			b = c;
-			c = a + b;
-			for (long j=0;j<100000000;j++);
-		}
-		result.setText(Long.toString(c));
+		FibonacciTask task = new FibonacciTask(n);
+		task.setOnSucceeded((succeededEvent) -> {
+			result.setText(task.getValue().toString());
+		});
+        Thread thread = new Thread(task);
+        thread.setDaemon(true);
+        thread.start();
 	}
 
 }
