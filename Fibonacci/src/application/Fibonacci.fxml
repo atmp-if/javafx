@@ -28,6 +28,7 @@
         <columns>
             <TableColumn fx:id="titleCol" prefWidth="158.0" text="Порядковий номер" />
           <TableColumn fx:id="resultCol" prefWidth="101.0" text="Результат" />
+            <TableColumn fx:id="statusCol" prefWidth="89.0" text="Статус" />
         </columns>
       </TableView>
       <Button mnemonicParsing="false" onAction="#next" text="Наступний" GridPane.columnIndex="1" GridPane.rowIndex="1" />

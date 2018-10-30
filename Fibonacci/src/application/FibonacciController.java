@@ -19,11 +19,14 @@ public class FibonacciController {
 	TableColumn<FibonacciTask, Long> resultCol;
 	@FXML
 	TableColumn<FibonacciTask, String> titleCol;
+	@FXML
+	TableColumn<FibonacciTask, String> statusCol;
 
 	@FXML
 	public void initialize() {
 		resultCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, Long>("value"));
 		titleCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("title"));
+		statusCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("message"));
 	}
 
 	@FXML
