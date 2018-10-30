@@ -12,7 +12,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("Fibonacci.fxml"));
-			Scene scene = new Scene(root,480,400);
+			Scene scene = new Scene(root,535,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setTitle("Послідовність Фібоначчі");
 			primaryStage.setScene(scene);

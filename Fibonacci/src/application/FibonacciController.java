@@ -1,7 +1,11 @@
 package application;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.ProgressBarTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
@@ -23,6 +27,8 @@ public class FibonacciController {
 	TableColumn<FibonacciTask, String> statusCol;
 	@FXML
 	TableColumn<FibonacciTask, Double> progressCol;
+	
+	ExecutorService executor = Executors.newFixedThreadPool(2);
 
 	@FXML
 	public void initialize() {
@@ -38,9 +44,7 @@ public class FibonacciController {
 		long n = Long.parseLong(input.getText());
 		FibonacciTask task = new FibonacciTask(n);
 		resultTable.getItems().add(task);
-		Thread thread = new Thread(task);
-		thread.setDaemon(true);
-		thread.start();
+		executor.execute(task);
 	}
 
 	@FXML

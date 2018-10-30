@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane hgap="5.0" prefHeight="391.0" prefWidth="471.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FibonacciController">
+<GridPane hgap="5.0" prefHeight="400.0" prefWidth="539.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FibonacciController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -24,12 +24,12 @@
       <Label text="Порядковий номер" />
       <TextField fx:id="input" text="1" GridPane.columnIndex="1" />
       <Button mnemonicParsing="false" onAction="#calculate" text="Обчислити" GridPane.rowIndex="1" />
-      <TableView fx:id="resultTable" prefHeight="295.0" prefWidth="470.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+      <TableView fx:id="resultTable" prefHeight="295.0" prefWidth="527.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
         <columns>
             <TableColumn fx:id="titleCol" prefWidth="158.0" text="Порядковий номер" />
           <TableColumn fx:id="resultCol" prefWidth="101.0" text="Результат" />
             <TableColumn fx:id="statusCol" prefWidth="89.0" text="Статус" />
-            <TableColumn fx:id="progressCol" prefWidth="122.0" text="Прогрес" />
+            <TableColumn fx:id="progressCol" prefWidth="121.0" text="Прогрес" />
         </columns>
       </TableView>
       <Button mnemonicParsing="false" onAction="#next" text="Наступний" GridPane.columnIndex="1" GridPane.rowIndex="1" />
