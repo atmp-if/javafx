@@ -19,6 +19,7 @@ public class FibonacciController {
 			a = b;
 			b = c;
 			c = a + b;
+			for (long j=0;j<100000000;j++);
 		}
 		result.setText(Long.toString(c));
 	}
