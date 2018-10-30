@@ -30,6 +30,7 @@ public class FibonacciController {
 		titleCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("title"));
 		statusCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("message"));
 		progressCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, Double>("progress"));
+		progressCol.setCellFactory(ProgressBarTableCell.<FibonacciTask>forTableColumn());
 	}
 
 	@FXML
