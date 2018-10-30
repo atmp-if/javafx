@@ -21,12 +21,15 @@ public class FibonacciController {
 	TableColumn<FibonacciTask, String> titleCol;
 	@FXML
 	TableColumn<FibonacciTask, String> statusCol;
+	@FXML
+	TableColumn<FibonacciTask, Double> progressCol;
 
 	@FXML
 	public void initialize() {
 		resultCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, Long>("value"));
 		titleCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("title"));
 		statusCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("message"));
+		progressCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, Double>("progress"));
 	}
 
 	@FXML

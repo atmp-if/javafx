@@ -22,6 +22,7 @@ public class FibonacciTask extends Task<Long> {
 			c = a + b;
 			for (long j = 0; j < 100000000; j++)
 				;
+			updateProgress(i, n-1);
 		}
 		updateMessage("Завершено");
 		return c;
