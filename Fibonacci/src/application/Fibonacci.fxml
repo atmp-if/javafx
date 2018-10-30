@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -16,12 +18,16 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
       <Label text="Порядковий номер" />
       <TextField fx:id="input" text="1" GridPane.columnIndex="1" />
       <Button mnemonicParsing="false" onAction="#calculate" text="Обчислити" GridPane.rowIndex="1" />
-      <Label text="Результат" GridPane.rowIndex="2" />
-      <Label fx:id="result" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TableView fx:id="resultTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+        <columns>
+          <TableColumn fx:id="resultCol" prefWidth="117.0" text="Результат" />
+        </columns>
+      </TableView>
    </children>
 </GridPane>
