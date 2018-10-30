@@ -17,10 +17,13 @@ public class FibonacciController {
 	TableView<FibonacciTask> resultTable;
 	@FXML
 	TableColumn<FibonacciTask, Long> resultCol;
+	@FXML
+	TableColumn<FibonacciTask, String> titleCol;
 
 	@FXML
 	public void initialize() {
 		resultCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, Long>("value"));
+		titleCol.setCellValueFactory(new PropertyValueFactory<FibonacciTask, String>("title"));
 	}
 
 	@FXML

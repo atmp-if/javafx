@@ -8,6 +8,7 @@ public class FibonacciTask extends Task<Long> {
 	
 	public FibonacciTask(long n) {
 		this.n = n;
+		updateTitle(Long.toString(n));
 	}
 	
 	@Override

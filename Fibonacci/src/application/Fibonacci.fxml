@@ -24,9 +24,10 @@
       <Label text="Порядковий номер" />
       <TextField fx:id="input" text="1" GridPane.columnIndex="1" />
       <Button mnemonicParsing="false" onAction="#calculate" text="Обчислити" GridPane.rowIndex="1" />
-      <TableView fx:id="resultTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+      <TableView fx:id="resultTable" prefHeight="295.0" prefWidth="427.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
         <columns>
-          <TableColumn fx:id="resultCol" prefWidth="117.0" text="Результат" />
+            <TableColumn fx:id="titleCol" prefWidth="158.0" text="Порядковий номер" />
+          <TableColumn fx:id="resultCol" prefWidth="101.0" text="Результат" />
         </columns>
       </TableView>
       <Button mnemonicParsing="false" onAction="#next" text="Наступний" GridPane.columnIndex="1" GridPane.rowIndex="1" />
