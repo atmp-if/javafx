@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<GridPane hgap="5.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.FibonacciController">
+<GridPane hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FibonacciController">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -20,9 +19,9 @@
    </rowConstraints>
    <children>
       <Label text="Порядковий номер" />
-      <TextField text="1" GridPane.columnIndex="1" />
-      <Button mnemonicParsing="false" text="Обчислити" GridPane.rowIndex="1" />
+      <TextField fx:id="input" text="1" GridPane.columnIndex="1" />
+      <Button mnemonicParsing="false" onAction="#calculate" text="Обчислити" GridPane.rowIndex="1" />
       <Label text="Результат" GridPane.rowIndex="2" />
-      <Label text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="result" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
    </children>
 </GridPane>
