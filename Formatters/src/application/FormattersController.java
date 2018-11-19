@@ -61,12 +61,8 @@ public class FormattersController {
             Person.Salary_ua=Sal;
             Double Sal_lang=Sal/30;
             Person.Salary_lang=Sal_lang;
-            Formatter DS_ua= new Formatter();
-            DS_ua.format("%.1f грн.", Sal);
-            DSalary_ua.setText(String.valueOf(DS_ua));
-            Formatter DS_lang= new Formatter();
-            DS_lang.format("$%.2f", Sal_lang);
-            DSalary_lang.setText(String.valueOf(DS_lang));
+            DSalary_ua.setText(String.format("%.1f грн.", Sal));
+            DSalary_lang.setText(String.format("$%.2f", Sal_lang));
          /*****************************************************/
             Man.Surname = DSurname_ua.getText().trim();
             Man.Name=DName_ua.getText().trim();
