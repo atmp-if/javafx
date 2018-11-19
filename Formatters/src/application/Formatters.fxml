@@ -58,7 +58,7 @@
          </font>
       </Label>
       <TextField fx:id="DSalary_ua" prefHeight="25.0" prefWidth="137.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Button fx:id="translation" mnemonicParsing="false" text="Переклад" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button onAction="#translate" mnemonicParsing="false" text="Переклад" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       <Label text=" Surname" GridPane.rowIndex="6">
          <font>
             <Font size="16.0" />
