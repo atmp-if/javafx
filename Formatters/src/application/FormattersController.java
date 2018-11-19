@@ -1,14 +1,15 @@
 package application;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
+
 import java.time.format.DateTimeFormatter;
 import java.util.Formatter;
 
 public class FormattersController {
-
-    @FXML
-    public ComboBox<?> country;
 
     @FXML
     public TextField DName_lang;
@@ -62,10 +63,8 @@ public class FormattersController {
                 Double Sal_lang=Sal/30;
                 Person.Salary_lang=Sal_lang;
                 Formatter DS_ua= new Formatter();
-                Formatter format_ua = DS_ua.format("%.1f", Sal);
                 DSalary_ua.setText(String.valueOf(DS_ua)+"  грн");
                 Formatter DS_lang= new Formatter();
-                Formatter format_lang = DS_lang.format("%.2f", Sal_lang);
                 DSalary_lang.setText("$ "+String.valueOf(DS_lang));
              /*****************************************************/
                 Man.Surname = DSurname_ua.getText().trim();
