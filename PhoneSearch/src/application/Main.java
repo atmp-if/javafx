@@ -16,7 +16,7 @@ public class Main extends Application {
 			VBox root = (VBox)FXMLLoader.load(getClass().getResource("PhoneBook.fxml"));
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setTitle("Телефонний довідник");
+			primaryStage.setTitle("РўРµР»РµС„РѕРЅРЅРёР№ РґРѕРІС–РґРЅРёРє");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

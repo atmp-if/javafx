@@ -19,11 +19,11 @@ import javafx.scene.control.cell.TextFieldTableCell;
 public class PhoneBookController {
 	
     private final ObservableList<Phone> data = FXCollections.observableArrayList(
-    		new Phone("Іванов І.І.", "094794721", "jacob.smith@example.com"),
-            new Phone("Петрова М.Н.", "0954847216", "isabella.johnson@example.com"),
-            new Phone("Сидоров Ю.А.", "0673259833", "ethan.williams@example.com"),
-            new Phone("Васильків П.Р.", "0504877732", "emma.jones@example.com"),
-            new Phone("Герасименко Р.В.", "0963334532", "michael.brown@example.com")
+    		new Phone("Р†РІР°РЅРѕРІ Р†.Р†.", "094794721", "jacob.smith@example.com"),
+            new Phone("РџРµС‚СЂРѕРІР° Рњ.Рќ.", "0954847216", "isabella.johnson@example.com"),
+            new Phone("РЎРёРґРѕСЂРѕРІ Р®.Рђ.", "0673259833", "ethan.williams@example.com"),
+            new Phone("Р’Р°СЃРёР»СЊРєС–РІ Рџ.Р .", "0504877732", "emma.jones@example.com"),
+            new Phone("Р“РµСЂР°СЃРёРјРµРЅРєРѕ Р .Р’.", "0963334532", "michael.brown@example.com")
     		);
     private final FilteredList<Phone> filteredData = new FilteredList<>(data, p -> true);
     
@@ -36,7 +36,7 @@ public class PhoneBookController {
 			    new EventHandler<CellEditEvent<Phone, String>>() {
 			       @Override
 			        public void handle(CellEditEvent<Phone, String> t) {
-			        	Pattern ptNameColl = Pattern.compile("[A-Za-zА-Яа-яІі]+");
+			        	Pattern ptNameColl = Pattern.compile("[A-Za-zРђ-РЇР°-СЏР†С–]+");
 			         	Matcher n = ptNameColl.matcher(t.getNewValue());
 			         	boolean fpn = n.matches();
 			        	if (fpn) {
