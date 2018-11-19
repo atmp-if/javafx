@@ -41,21 +41,21 @@ public class Phone {
 	}
 
 	public boolean isValidName() {
-		Pattern ptN = Pattern.compile("[A-Z]+");
+		Pattern ptN = Pattern.compile("[А-ЯІЇҐ]{1}[а-яіїґ]+ [А-ЯІЇҐ]{1}\\.[А-ЯІЇҐ]{1}\\.");
 		Matcher n = ptN.matcher(getName());
 		boolean fn = n.matches();
 		return fn;
 	}
 
 	public boolean isValidPhone() {
-		Pattern ptP = Pattern.compile("[0-9]+");
+		Pattern ptP = Pattern.compile("[0-9]{10}");
 		Matcher p = ptP.matcher(getPhone());
 		boolean fp = p.matches();
 		return fp;
 	}
 
 	public boolean isValidAddress() {
-		Pattern ptA = Pattern.compile("[a-z0-9]{1,}@{1}([a-z0-9]{1,}\\.)+[a-z]{1,3}");
+		Pattern ptA = Pattern.compile("[a-z0-9\\.]{1,}@{1}([a-z0-9]{1,}\\.)+[a-z]{1,3}");
 		Matcher a = ptA.matcher(getAddress());
 		boolean fa = a.matches();
 		return fa;
