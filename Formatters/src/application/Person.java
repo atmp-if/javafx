@@ -1,11 +1,11 @@
 package application;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.lang.String;
 public class Person {
    public String Surname;
    public String Name;
-   public Date  Birtday;
+   public LocalDate Birtday;
    static Double Salary_ua;
    static Double Salary_lang;
 

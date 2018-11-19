@@ -2,8 +2,7 @@ package application;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.Formatter;
 
 public class FormattersController {
@@ -42,16 +41,9 @@ public class FormattersController {
     void initialize() {
             Person Man=new Person();
             translation.setOnAction(event-> {
-            String strDate=DDate_ua.getEditor().getText();
-            SimpleDateFormat f=new SimpleDateFormat("dd.mm.yyyy");
-                try {
-                    Man.Birtday = f.parse(strDate);
-                }
-                    catch (ParseException e) {
-                        e.printStackTrace();
-                    }
-            SimpleDateFormat ff=new SimpleDateFormat("dd-mm-yyyy");
-            String BDay=ff.format(Man.Birtday);
+            Man.Birtday = DDate_ua.getValue();
+            DateTimeFormatter ff=DateTimeFormatter.ofPattern("dd-MM-yyyy");
+            String BDay=Man.Birtday.format(ff);
             DBirthday_lang.setText(BDay);
             /************************************************/
                 String StSum = DSalary_ua.getText().trim();
