@@ -2,3 +2,7 @@ title: Програмування на JavaFX
 description: Візуальне програмування мовою JavaFX з використанням можливостей програми Scene Builder.
 show_downloads: true
 theme: jekyll-theme-leap-day
+
+github:
+  zip_url: https://github.com/protomors/atmp/zipball/project
+  pdf_url: https://github.com/protomors/atmp/releases/download/book-0.1/book.pdf
