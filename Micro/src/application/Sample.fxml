@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="grid" alignment="CENTER" gridLinesVisible="true" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button fx:id="bt1" mnemonicParsing="false" onAction="#generate" prefHeight="25.0" prefWidth="150.0" text="Згенерувати масив мікробів" textAlignment="CENTER" textFill="#8a3b3b" wrapText="true">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt2" mnemonicParsing="false" onAction="#life" prefHeight="26.0" prefWidth="125.0" text="Аналіз комфортності проживання мікробів" textFill="#904848" wrapText="true" GridPane.columnIndex="1">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <GridPane fx:id="grid2" hgap="2.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        
+      </GridPane>
+      <GridPane fx:id="grid1" hgap="2.0" GridPane.rowIndex="1">
+       
+      </GridPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
