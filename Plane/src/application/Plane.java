@@ -1,5 +1,4 @@
 package application;
-import java.io.File;
 
 import javafx.scene.image.Image;
 
@@ -15,7 +14,6 @@ public abstract class Plane {
 	abstract String carry ();
 	abstract String getPhoto();
 	Image getImage() {
-		File file = new File(this.getPhoto());
-		return new Image(file.toURI().toString());
+		return new Image(getClass().getResourceAsStream(this.getPhoto()));
 	}
 }

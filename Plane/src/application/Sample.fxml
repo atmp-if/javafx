@@ -63,7 +63,7 @@
                   <Insets top="20.0" />
                </HBox.margin>
                <image>
-                  <Image url="@../../1.jpg" />
+                  <Image url="@/application/1.jpg" />
                </image></ImageView>
          </children>
          <VBox.margin>
