@@ -24,6 +24,7 @@ public class SampleController {
 					plane = temp;
 					text = text + plane.carry();
 					image.setImage(plane.getImage());
+					image.setVisible(true);
 				}
 		} else {
 			if (rbVant.isSelected()) {
@@ -32,6 +33,7 @@ public class SampleController {
 						plane = temp;
 						text = text + plane.carry();
 						image.setImage(plane.getImage());
+						image.setVisible(true);
 					}
 			}else {
 				for (Plane temp: planeMas) {
