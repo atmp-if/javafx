@@ -5,22 +5,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="200.0" prefWidth="450.0"  xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AquariumController">
+<AnchorPane prefHeight="170.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AquariumController">
    <children>
-      <TextField fx:id="tWidth" layoutY="51.0" 
-      AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0" />
-      <Label layoutX="51.0" layoutY="22.0" text="Ширина" />
-      <TextField fx:id="tDepth" layoutX="301.0" layoutY="40.0" 
-      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0" />
-      <TextField fx:id="tHeight" layoutX="151.0" layoutY="40.0" />
-      <Label layoutX="206.0" layoutY="22.0" text="Висота" />
-      <Label layoutX="352.0" layoutY="22.0" text="Глибина" />
-      <Label fx:id="resLabel" layoutX="211.0" layoutY="83.0" 
-      AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="0.0" 
-      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0" />
-      <Button fx:id="buttonVolume" layoutX="199.0" layoutY="124.0" 
-      mnemonicParsing="false" 
-      onAction="#click" text="Об'єм" />
+      <TextField fx:id="tWidth" layoutX="14.0" layoutY="40.0" prefHeight="26.0" prefWidth="142.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0" />
+      <Label layoutX="57.0" layoutY="22.0" text="Ширина" />
+      <TextField fx:id="tDepth" layoutX="314.0" layoutY="40.0" prefHeight="26.0" prefWidth="127.0" AnchorPane.leftAnchor="314.0" AnchorPane.topAnchor="40.0" />
+      <TextField fx:id="tHeight" layoutX="165.0" layoutY="40.0" prefHeight="26.0" prefWidth="142.0" />
+      <Label layoutX="212.0" layoutY="22.0" text="Висота" />
+      <Label layoutX="349.0" layoutY="22.0" text="Глибина" />
+      <Label fx:id="resLabel" layoutX="211.0" layoutY="83.0" prefHeight="16.0" prefWidth="441.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="90.0" />
+      <Button fx:id="buttonVolume" layoutX="208.0" layoutY="124.0" mnemonicParsing="false" onAction="#click" text="Об'єм" />
    </children>
 </AnchorPane>
-
