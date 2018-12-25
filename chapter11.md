@@ -6,6 +6,6 @@
 користувача необхідно вивести інформацію про них (про всі, або про ті, що
 підпорядковуються певній умові)
 
-[Код проекту](https://github.com/protomors/atmp/tree/project/Plane)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Plane)
 
-[Jar файл](https://github.com/protomors/atmp/releases/download/0.2/plane.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/Plain.jar)

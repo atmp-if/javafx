@@ -4,6 +4,6 @@
 
 Програма для обчислення чисер ряду Фібоначчі з використанням багатопотоковості.
 
-[Код проекту](https://github.com/protomors/atmp/tree/project/Fibonacci)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Fibonacci)
 
-[Jar файл](https://github.com/protomors/atmp/releases/download/0.2/fibonacci.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/fibonacci.jar)
