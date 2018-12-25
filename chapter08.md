@@ -1,0 +1,9 @@
+# Багатовимірні масиви
+
+![Скріншот](/images/chapter08.png)
+
+В деякому просторі випадковим чином поселяються мікроби. Простір – квадратний масив певної розмірності. Мікроби – певні текстові символи.
+
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Micro)
+
+[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/microbs.jar)
