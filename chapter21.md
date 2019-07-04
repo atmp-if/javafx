@@ -1,9 +1,16 @@
-# Основи багатопотоковості
+# Технологія Generics
 
 ![Скріншот](/images/chapter21.png)
 
-Програма для обчислення чисер ряду Фібоначчі з використанням багатопотоковості.
+Створити проект, в якому генеруються масиви різних
+типів даних, які передаються класу з Generic-параметрами.
+Використовуючи Generic-метод класу, відсортувати ці масиви.
+В проекті використати кнопки, які відповідають за генерацію та
+виведення невідсортованих масивів різних типів (наприклад,
+об’єктів Integer та Character) та кнопки, які відповідають за
+виклик методу для сортування та виведення відсортованих
+масивів.
 
-[Код проекту](https://github.com/atmp-if/javafx/tree/project/Fibonacci)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Generics)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Fibonacci.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Generics.jar)
