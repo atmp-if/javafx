@@ -2,7 +2,3 @@ title: Об’єктно-орієнтоване програмування мо�
 description: з використанням можливостей JavaFX для створення графічного інтерфейсу програмного продукту
 show_downloads: true
 theme: jekyll-theme-leap-day
-
-github:
-  zip_url: https://github.com/atmp-if/javafx/releases/latest/download/projects.zip
-  pdf_url: https://github.com/atmp-if/javafx/releases/latest/download/book.pdf

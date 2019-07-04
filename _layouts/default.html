@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "uk-UA" }}">
-  <head>
-    <meta charset="utf-8">
-{% seo %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-      <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-      </header>
-      <div id="banner">
-        <span id="logo"></span>
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>Переглянути код</strong></a>
-        {% if site.show_downloads %}
-          <div class="downloads">
-            <span>Завантажити:</span>
-            <ul>
-              <li><a href="{{ site.github.zip_url }}" class="button">Код проектів</a></li>
-              <li><a href="{{ site.github.pdf_url }}" class="button">Посібник</a></li>
-            </ul>
-          </div>
-        {% endif %}
-      </div>
-    <div class="wrapper">
-      <section>
-        {{ content }}
-      </section>
+
+<head>
+  <meta charset="utf-8">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    <p>{{ site.description | default: site.github.project_tagline }}</p>
+  </header>
+  <div id="banner">
+    <span id="logo"></span>
+    <a href="{{ site.github.repository_url }}" class="button fork"><strong>Переглянути код</strong></a>
+    {% if site.show_downloads %}
+    <div class="downloads">
+      <ul>
+        <li><a href="downloads.md" class="button">Завантажити</a></li>
+      </ul>
     </div>
-  </body>
+    {% endif %}
+  </div>
+  <div class="wrapper">
+    <section>
+      {{ content }}
+    </section>
+  </div>
+</body>
+
 </html>
