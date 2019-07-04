@@ -4,5 +4,5 @@ show_downloads: true
 theme: jekyll-theme-leap-day
 
 github:
-  zip_url: https://github.com/atmp-if/javafx/archive/0.3.zip
-  pdf_url: https://github.com/atmp-if/javafx/releases/download/0.3/book.pdf
+  zip_url: https://github.com/atmp-if/javafx/releases/latest/download/projects.zip
+  pdf_url: https://github.com/atmp-if/javafx/releases/latest/download/book.pdf

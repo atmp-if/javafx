@@ -6,4 +6,4 @@
 
 [Код проекту](https://github.com/atmp-if/javafx/tree/project/Fibonacci)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/fibonacci.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Fibonacci.jar)

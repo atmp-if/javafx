@@ -8,4 +8,4 @@
 
 [Код проекту](https://github.com/atmp-if/javafx/tree/project/Plane)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/Plain.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Plane.jar)

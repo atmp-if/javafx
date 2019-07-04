@@ -6,4 +6,4 @@
 
 [Код проекту](https://github.com/atmp-if/javafx/tree/project/Strings)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/download/0.3/strings.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Strings.jar)
