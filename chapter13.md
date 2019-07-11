@@ -4,6 +4,6 @@
 
 Ви готуєтесь до здачі ЗНО і кожен день у вас є заняття з вибраних предметів, до того ж ви ще у середу і у суботу займаєтесь спортом. Розробіть проект, у якому відповідно до вибраного дня тижня на екрані буде відображатись список і тривалість занять, запланованих на цей день.
 
-[Код проекту](https://github.com/atmp-if/javafx/tree/project/ZNO)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Zno)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/ZnoFX.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Zno.jar)

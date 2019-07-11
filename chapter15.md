@@ -6,4 +6,4 @@
 
 [Код проекту](https://github.com/atmp-if/javafx/tree/project/Cities2)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Inner.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Cities2.jar)
