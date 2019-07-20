@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class App extends Application {
+public class Hello extends Application {
 
 	@Override
 	public void start(Stage stage) {
@@ -19,7 +19,7 @@ public class App extends Application {
 	}
 
 	public static void main(String[] args) {
-		App.launch();
+		Hello.launch();
 	}
 
 }

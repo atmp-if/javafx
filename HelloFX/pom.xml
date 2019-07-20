@@ -9,9 +9,9 @@
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hello</artifactId>
+	<artifactId>HelloFX</artifactId>
 
-	<name>hello</name>
+	<name>HelloFX</name>
 
 	<build>
 		<plugins>

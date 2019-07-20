@@ -84,6 +84,7 @@
 	</build>
 
 	<modules>
-		<module>hello</module>
+		<module>Hello</module>
+		<module>HelloFX</module>
 	</modules>
 </project>
