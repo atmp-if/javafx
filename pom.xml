@@ -85,6 +85,9 @@
 
 	<modules>
 		<module>Hello</module>
+		<module>Numerology</module>
+		<module>Profit</module>
+		<module>Aquarium</module>
 		<module>HelloFX</module>
 	</modules>
 </project>
