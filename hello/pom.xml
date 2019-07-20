@@ -12,13 +12,6 @@
 	<artifactId>hello</artifactId>
 
 	<name>hello</name>
-	<url>https://javafx.atmp-if.pp.ua</url>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>12</maven.compiler.source>
-		<maven.compiler.target>12</maven.compiler.target>
-	</properties>
 
 	<build>
 		<plugins>
