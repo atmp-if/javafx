@@ -25,6 +25,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>12.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-graphics </artifactId>
 			<version>12.0.1</version>
 			<classifier>win</classifier>
@@ -89,5 +94,6 @@
 		<module>Profit</module>
 		<module>Aquarium</module>
 		<module>HelloFX</module>
+		<module>AquariumFX</module>
 	</modules>
 </project>
