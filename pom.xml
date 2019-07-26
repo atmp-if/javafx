@@ -97,5 +97,6 @@
 		<module>Aquarium</module>
 		<module>HelloFX</module>
 		<module>AquariumFX</module>
+		<module>Equation</module>
 	</modules>
 </project>
