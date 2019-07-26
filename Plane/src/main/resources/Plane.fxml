@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.PlaneController">
+   <children>
+      <Label text="Аеропорт" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="54.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="113.0" prefWidth="437.0">
+         <children>
+            <VBox prefHeight="150.0" prefWidth="293.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="275.0" text="Виберіть тип літака для відображення" wrapText="true" />
+                  <RadioButton id="rbPas" fx:id="rbPas" mnemonicParsing="false" text="Пасажирські">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="planeType" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton id="rbVan" fx:id="rbVant" mnemonicParsing="false" text="Вантажні" toggleGroup="$planeType">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton id="rbAll" fx:id="rbAll" mnemonicParsing="false" text="Всі види" toggleGroup="$planeType">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <ImageView id="image" fx:id="image" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@/1.jpg" />
+               </image></ImageView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button id="btInf" mnemonicParsing="false" onAction="#btInformation" text="Інформація">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Label id="labInfo" fx:id="lInformation" minWidth="-Infinity" text="Тут відобразиться інформація про літаки" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
