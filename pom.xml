@@ -75,6 +75,8 @@
 						</execution>
 					</executions>
 					<configuration>
+						<finalName>${project.artifactId}</finalName>
+						<outputDirectory>../release</outputDirectory>
 						<createDependencyReducedPom>false</createDependencyReducedPom>
 						<transformers>
 							<transformer

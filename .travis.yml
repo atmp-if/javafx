@@ -1,14 +1,13 @@
 language: java
-jdk:
-- openjdk12
-script:
-- mvn package
+jdk: openjdk12
+script: mvn package
 deploy:
   provider: releases
   prerelease: true
   api_key:
     secure: E5aBktCBUFOhWzn1PmAwjE/bp42LE2AHe/l+KP44RAoYtX6Gm5382utcM5KifyHFOjycbBrW1qrhRdbPbDmSH77k4thtpil5//Zk8vS+R+8Y1MgjzozkHjIrlKYZoXFMSDXILMWw6pO0W7Vk4JG2G84dAF/H5a0S7AwF7kAZVmmiVtBWZ0KRyX1vgxcKo6bFFS1GqnpSCJS2nAic5N30ksQsJip0EKGd+3r1JqBWpMkDhZAHHiID607AAshR7qFNef6/dHTl2yWhn2KGNO4hs3gtz14kXZCdT5uREwn9hdtpjoU/g24QDeHFSs7xY0rTS96G82b5SvVwy/9RXF37Wob4i0xlc9H0mPk4/+1yR4/B+vM1rQIIgEl4iKTtcOsyVSpbEw8ANKlMnRXG2V5mJAsp1shoyC6QDQ4/fEvhAtV6ltoSxhdi7sdpsmXx0/NE0kekoj9209FJ1MYy18XKzxodVoH01QguS3CvoxDM49e+pC6borA8MAMenMlmg/py1ajATSH1DYa8T/3QHZqkGF2WD2Yu/PbBeNMICK1Cik8iIBl9HpWoM7f7bOPX8QAPMznDg02+wMO/+UeLOQe/qUKMDJ/5jai+By7eVNdfOGkGODAHko5O5Dx97hhZEfiCu3f8lahO13wW4q027TV2o0M9ZDKBrNzp8fn9z01N3lw=
-  file: Hello/target/Hello-1.0-SNAPSHOT.jar
+  file_glob: true
+  file: release/*
   skip_cleanup: true
   on:
     repo: atmp-if/javafx
