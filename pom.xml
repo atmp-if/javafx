@@ -103,5 +103,6 @@
 		<module>Transport</module>
 		<module>Polymorph</module>
 		<module>Plane</module>
+		<module>Dog</module>
 	</modules>
 </project>

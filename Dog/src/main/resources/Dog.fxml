@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.DogController">
+   <children>
+      <Label text="Дім Cірка" textFill="#641a1a">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label prefHeight="35.0" prefWidth="240.0" text="Виберіть критерії перегляду інформції" textFill="#e83030" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="266.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="266.0" prefWidth="78.0">
+               <children>
+                  <CheckBox fx:id="chLaki" mnemonicParsing="false" onAction="#check" text="Лакі">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="chCnypi" mnemonicParsing="false" onAction="#check" text="Снупі">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="chAlf" mnemonicParsing="false" onAction="#check" text="Альф">
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="chBaddi" mnemonicParsing="false" onAction="#check" text="Бадді">
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="chBars" mnemonicParsing="false" onAction="#check" text="Барс">
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="chBim" mnemonicParsing="false" onAction="#check" text="Бім">
+                     <padding>
+                        <Insets bottom="30.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Фото" />
+                  <ImageView fx:id="fotoLacki" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Laki.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="fotoSnupi" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Snupi.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="fotoAlf" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Alf.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="fotoBaddi" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Baddi.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="fotoBars" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Bars.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="fotoBim" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@/Bim.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Виберіть спосіб сортування" wrapText="true" />
+                  <RadioButton fx:id="rbName" mnemonicParsing="false" selected="true" text="по імені">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgGrSort" />
+                     </toggleGroup>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbWeight" mnemonicParsing="false" text="по вазі" toggleGroup="$tgGrSort">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </RadioButton>
+                  <RadioButton fx:id="rbAge" mnemonicParsing="false" text="по віку" toggleGroup="$tgGrSort">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </RadioButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="266.0" prefWidth="198.0">
+               <children>
+                  <Button fx:id="btInfo" mnemonicParsing="false" onAction="#btInfo" text="Інформція">
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin></Button>
+                  <Label fx:id="labelInfo" text="Результати пошуку">
+                     <VBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
