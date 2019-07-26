@@ -75,8 +75,7 @@
 						</execution>
 					</executions>
 					<configuration>
-						<finalName>${project.artifactId}</finalName>
-						<outputDirectory>../release</outputDirectory>
+						<outputFile>../release/${project.artifactId}.jar</outputFile>
 						<createDependencyReducedPom>false</createDependencyReducedPom>
 						<transformers>
 							<transformer
