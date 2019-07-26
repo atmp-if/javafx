@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="415.0" prefWidth="799.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.TransportController">
+   <left>
+      <GridPane hgap="5.0" prefHeight="275.0" prefWidth="404.0" vgap="5.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.0" minWidth="10.0" prefWidth="230.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="3.0" prefWidth="117.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lb0" style="-fx-text-fill: white;" text="Пункт відправлення">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="lb1" style="-fx-text-fill: white;" text="Пункт призначення" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="lb2" style="-fx-text-fill: white;" text="Введіть відстань в км." GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="lb3" style="-fx-text-fill: white;" text="Виберіть тип перевезень" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="lb5" style="-fx-text-fill: white;" text="Вкажіть кількість пасажирів" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Label fx:id="lb6" style="-fx-text-fill: white;" text="Вкажіть масу вантажу" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font></Label>
+            <Button fx:id="btnViewListVehicle" mnemonicParsing="false" onAction="#createListView" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 20;" text="Показати транспортні засоби" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <TextField fx:id="tf0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-radius: 20;" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="tf1" style="-fx-background-radius: 20;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="tf2" style="-fx-background-radius: 20;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#changedRb" selected="true" style="-fx-text-fill: white;" text="Пасажирські" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#changedRb" style="-fx-text-fill: white;" text="Вантажні" toggleGroup="$toggleGroup" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+             
+               </RadioButton>
+            <TextField fx:id="tf5" style="-fx-background-radius: 20;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <TextField fx:id="tf6" style="-fx-background-radius: 20;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </GridPane>
+   </left>
+   <center>
+      <ListView fx:id="lv" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ListView>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="265.0" spacing="10.0">
+               <children>
+                  <DatePicker fx:id="dpBegin" prefHeight="25.0" prefWidth="180.0">
+                     <effect>
+                        <DropShadow />
+                     </effect></DatePicker>
+                  <DatePicker fx:id="dpEnd" prefHeight="25.0" prefWidth="179.0" style="-fx-background-color: aquamarine;">
+                     <effect>
+                        <DropShadow />
+                     </effect></DatePicker>
+                  <Button fx:id="btnOrderVehicle" mnemonicParsing="false" onAction="#createOrder" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: green; -fx-background-radius: 20; -fx-text-fill: white;" text="Замовити перевезення">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect></Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <TextArea fx:id="txtAr" prefHeight="100.0" prefWidth="561.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextArea>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</BorderPane>
