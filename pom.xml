@@ -101,5 +101,6 @@
 		<module>Cities</module>
 		<module>Microbes</module>
 		<module>Transport</module>
+		<module>Polymorph</module>
 	</modules>
 </project>
