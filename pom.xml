@@ -99,5 +99,6 @@
 		<module>Equation</module>
 		<module>Bank</module>
 		<module>Cities</module>
+		<module>Microbes</module>
 	</modules>
 </project>
