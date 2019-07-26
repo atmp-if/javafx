@@ -98,5 +98,6 @@
 		<module>AquariumFX</module>
 		<module>Equation</module>
 		<module>Bank</module>
+		<module>Cities</module>
 	</modules>
 </project>
