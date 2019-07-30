@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.CodeController">
+<top>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <children>
+            <Label text="Зашифруй повідомлення" />
+        </children>
+    </HBox>
+</top>
+<left>
+    <TextArea fx:id="textAreaIn" prefHeight="200.0" prefWidth="200.0" promptText="Біг пес через панський овес, Доганяйте пса, Щоб не потолочив вівса." BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin></TextArea>
+</left>
+<right>
+    <TextArea fx:id="textAreaOut" prefHeight="200.0" prefWidth="200.0" promptText="Біг пес через панський овес, Доганяйте пса, Щоб не потолочив вівса." BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin></TextArea>
+</right>
+<center>
+    <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+        <children>
+            <CheckBox fx:id="reverseOn" mnemonicParsing="false" text="розвернути" />
+            <CheckBox fx:id="UpperCase" mnemonicParsing="false" text="усі великі літери" />
+            <CheckBox fx:id="delSpace" mnemonicParsing="false" text="видалити пропуски" />
+            <CheckBox fx:id="numberOfCharacters" mnemonicParsing="false" text="показати кількість символів" />
+            <CheckBox fx:id="сaesarCode" mnemonicParsing="false" text="шифр Цезаря" />
+            <Label fx:id="test" text="Кількість символів:">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+        </children>
+    </VBox>
+</center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#apply" text="Застосувати" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+</BorderPane>

@@ -105,5 +105,6 @@
 		<module>Plane</module>
 		<module>Dog</module>
 		<module>Zno</module>
+		<module>Code</module>
 	</modules>
 </project>
