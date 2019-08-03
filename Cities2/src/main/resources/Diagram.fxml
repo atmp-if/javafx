@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.DiagramController">
+   <children>
+      <BarChart fx:id="idBarChart" layoutX="7.0" layoutY="7.0" prefHeight="592.0" prefWidth="789.0">
+        <xAxis>
+          <CategoryAxis fx:id="idCity" label="Міста" side="BOTTOM" tickLabelRotation="-90.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="idNasel" label="Населення" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
