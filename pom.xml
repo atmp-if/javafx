@@ -110,5 +110,6 @@
 		<module>Word</module>
 		<module>VetClinic</module>
 		<module>Phone</module>
+		<module>Formatter</module>
 	</modules>
 </project>
