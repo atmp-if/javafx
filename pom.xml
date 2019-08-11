@@ -118,5 +118,6 @@
 		<module>Formatter</module>
 		<module>Audioplayer</module>
 		<module>Generics</module>
+		<module>Library</module>
 	</modules>
 </project>
