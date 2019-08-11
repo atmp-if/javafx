@@ -119,5 +119,6 @@
 		<module>Audioplayer</module>
 		<module>Generics</module>
 		<module>Library</module>
+		<module>Fibonacci</module>
 	</modules>
 </project>
