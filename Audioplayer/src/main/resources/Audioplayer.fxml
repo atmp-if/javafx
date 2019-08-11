@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="446.0" prefWidth="346.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="atmp.javafx.AudioplayerController">
+   <children>
+      <Label fx:id="nameFile" layoutX="22.0" layoutY="23.0" text="Трек не вибраний" textFill="#0002ff" AnchorPane.topAnchor="23.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Slider fx:id="progressSlider" layoutX="19.0" layoutY="50.0" onDragDetected="#dragSlider" prefHeight="14.0" prefWidth="200.0" />
+      <Label fx:id="timeLabel" layoutX="261.0" layoutY="48.0" prefHeight="17.0" prefWidth="118.0" textFill="#0002ff" AnchorPane.leftAnchor="230.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <ToggleButton fx:id="stopTgbtn" layoutX="19.0" layoutY="81.0" mnemonicParsing="false" onAction="#groupActions" prefHeight="25.0" prefWidth="100.0" selected="true" text="Стоп" textAlignment="CENTER" textFill="#0002ff" AnchorPane.leftAnchor="5.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgGroup" />
+         </toggleGroup></ToggleButton>
+      <ToggleButton fx:id="playTgbtn" layoutX="152.0" layoutY="81.0" mnemonicParsing="false" onAction="#groupActions" prefHeight="25.0" prefWidth="100.0" text="Програвати" textAlignment="CENTER" textFill="#0002ff" toggleGroup="$tgGroup" AnchorPane.leftAnchor="120.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></ToggleButton>
+      <ToggleButton fx:id="pauseTgbtn" layoutX="250.0" layoutY="81.0" mnemonicParsing="false" onAction="#groupActions" prefHeight="25.0" prefWidth="100.0" text="Пауза" textAlignment="CENTER" textFill="#0002ff" toggleGroup="$tgGroup" AnchorPane.leftAnchor="235.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></ToggleButton>
+      <Slider fx:id="volumeSlider" layoutX="91.0" layoutY="136.0" onDragDetected="#dragVolume" prefHeight="14.0" prefWidth="98.0" />
+      <MenuButton fx:id="addMenubtn" layoutX="2.0" layoutY="172.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="+" textAlignment="CENTER" textFill="#0002ff" AnchorPane.leftAnchor="5.0">
+        <items>
+          <MenuItem fx:id="addFiles" mnemonicParsing="false" onAction="#addFilesOnAction" text="Додати пісні" />
+          <MenuItem fx:id="addDir" mnemonicParsing="false" onAction="#addDirOnAction" text="Додати папку" />
+            <MenuItem fx:id="addList" mnemonicParsing="false" onAction="#openListOnAction" text="Додати мій список" />
+            <MenuItem fx:id="createList" mnemonicParsing="false" onAction="#createListOnAction" text="Створити мій список" />
+        </items>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#f8df00" />
+         </effect>
+      </MenuButton>
+      <MenuButton fx:id="deleteMenubtn" layoutX="74.0" layoutY="172.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="-" textAlignment="CENTER" textFill="#0002ff" AnchorPane.leftAnchor="120.0">
+        <items>
+          <MenuItem fx:id="deleteTrack" mnemonicParsing="false" onAction="#deleteTrackOnAction" text="Видалити трек зі списку" />
+          <MenuItem fx:id="clearList" mnemonicParsing="false" onAction="#clearListOnAction" text="Очистити весь список" />
+            <MenuItem fx:id="deleteCloneTracks" mnemonicParsing="false" onAction="#deleteCloneTracksOnAction" text="Видалити всі пісні, що повторюються" />
+        </items>
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#f8df00" />
+         </effect>
+      </MenuButton>
+      <MenuButton fx:id="sortMenubtn" layoutX="140.0" layoutY="172.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Сортувати" textAlignment="CENTER" textFill="#0002ff" AnchorPane.leftAnchor="235.0">
+        <items>
+          <MenuItem fx:id="sortedToUp" mnemonicParsing="false" onAction="#sortedToUpOnAction" text="Сортувати за назвою від А до Я" />
+          <MenuItem fx:id="sortedToDown" mnemonicParsing="false" onAction="#sortedToDownOnAction" text="Сортувати за назвою від Я до А" />
+        </items>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#f8df00" />
+         </effect>
+      </MenuButton>
+      <ListView fx:id="list" layoutX="2.0" layoutY="211.0" onMousePressed="#onMousePressedListView" prefHeight="225.0" prefWidth="339.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="220.0">
+         <effect>
+            <DropShadow color="#f2ff00" />
+         </effect></ListView>
+      <Label layoutX="54.0" layoutY="114.0" text=" -" textFill="#0002ff">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="133.0" text="Звук" textFill="#0002ff">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="184.0" layoutY="115.0" text=" +" textFill="#0002ff">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
