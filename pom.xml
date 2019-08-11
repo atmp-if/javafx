@@ -108,5 +108,6 @@
 		<module>Code</module>
 		<module>Cities2</module>
 		<module>Word</module>
+		<module>VetClinic</module>
 	</modules>
 </project>
