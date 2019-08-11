@@ -4,6 +4,6 @@
 
 Ви вирішили завести 10 акваріумних рибок і хочете купити акваріум. Рекомендується на 1 рибку  розраховувати 9 л. води. В інтернет-магазині вказані розміри акваріуму. Оскільки в інтернет-магазині акваріум не один, то, щоб не розраховувати вручну кожного разу об'єм акваріуму, ви захотіли написати відповідну програму.
 
-[Код проекту](https://github.com/atmp-if/javafx/tree/project/Aquarium)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/AquariumFX)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Aquarium.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/AquariumFX.jar)

@@ -4,6 +4,6 @@
 
 Нам потрібно зробити проект, де можна зашифрувати текст, використовуючи методи класу String.
 
-[Код проекту](https://github.com/atmp-if/javafx/tree/project/SelectWord)
+[Код проекту](https://github.com/atmp-if/javafx/tree/project/Word)
 
-[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/SelectWord.jar)
+[Jar файл](https://github.com/atmp-if/javafx/releases/latest/download/Word.jar)
