@@ -117,5 +117,6 @@
 		<module>Phone</module>
 		<module>Formatter</module>
 		<module>Audioplayer</module>
+		<module>Generics</module>
 	</modules>
 </project>
