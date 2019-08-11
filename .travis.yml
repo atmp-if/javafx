@@ -12,4 +12,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: atmp-if/javafx
-    branch: maven
+    tags: true
