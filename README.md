@@ -16,3 +16,5 @@
 6. [Зміст](read.md)
 
 7. [Код проектів](https://github.com/atmp-if/javafx/archive/project.zip)
+
+8. Навчальна програма модуля "Розробка Android-проектів" (автор Мішагіна О.Д.). Схвалено до використання - Інститут модернізації змісту освіти лист №22.1/12-Г-1178 від 17.12.2019 [Програма Android](https://github.com/atmp-if/javafx/releases/latest/download/Android.doc) 
